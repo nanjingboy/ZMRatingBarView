@@ -1,21 +1,16 @@
-//
-//  AppDelegate.swift
-//  Example
-//
-//  Created by TomHuang on 2017/7/11.
-//  Copyright © 2017年 TomHuang. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var viewController: UIViewController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.viewController = ViewController()
+        self.window!.rootViewController = self.viewController
+        self.window!.makeKeyAndVisible()
         return true
     }
 
