@@ -33,15 +33,7 @@ class StarsView: UIView {
     }
 
     override func draw(_ rect: CGRect) {
-        var pointX = (rect.width - (self.starSize + self.starSpaceSize) * CGFloat(self.numberOfStars) + self.starSpaceSize) / 2
-        if pointX < 0 {
-            pointX = 0
-        }
-        var pointY = (rect.height - self.starSize) / 2
-        if pointY < 0 {
-            pointY = 0
-        }
-        var point = CGPoint(x: pointX, y: pointY)
+        var point = CGPoint(x: 0, y: 0)
         for _ in 0..<self.numberOfStars {
             let frame = CGRect(x: point.x, y: point.y, width: self.starSize, height: self.starSize)
             drawStar(point,frame: frame)
