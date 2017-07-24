@@ -36,12 +36,12 @@ class StarsView: UIView {
         var point = CGPoint(x: 0, y: 0)
         for _ in 0..<self.numberOfStars {
             let frame = CGRect(x: point.x, y: point.y, width: self.starSize, height: self.starSize)
-            drawStar(point,frame: frame)
+            drawStar(frame)
             point.x = point.x + self.starSize + self.starSpaceSize
         }
     }
 
-    func drawStar(_ point: CGPoint, frame: CGRect) {
+    func drawStar(_ frame: CGRect) {
         let path = UIBezierPath()
         path.move(to: CGPoint(x: frame.minX + 0.50000 * frame.width, y: frame.minY + 0.00000 * frame.height))
         path.addLine(to: CGPoint(x: frame.minX + 0.60940 * frame.width, y: frame.minY + 0.34942 * frame.height))
