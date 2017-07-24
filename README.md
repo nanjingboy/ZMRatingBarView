@@ -6,7 +6,7 @@ A simple Rating Bar library by Swift
 #### Install with [CocoaPods](http://cocoapods.org/)
 
 ```ruby
-pod 'ZMRatingBarView', '~> 0.1.0'
+pod 'ZMRatingBarView', '~> 0.1.1'
 ```
 
 #### [Example](Example/Example/ViewController.swift)
